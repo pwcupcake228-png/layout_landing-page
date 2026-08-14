@@ -16,6 +16,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link
+      rel="icon"
+      href="src/images/Logo.svg"
+      type="image/svg+xml">
+    <link
       rel="stylesheet"
       href="src/styles/index.scss"
     />
@@ -34,7 +38,7 @@
           <div class="top-bar">
             <a href="#" class="top-bar__logo-link">
               <img
-              src="src/images/logo-2x.png"
+              src="src/images/Logo.svg"
               alt="Nothing logo"
               class="top-bar__logo"
               >
@@ -59,7 +63,7 @@
         <div class="top-bar menu__top">
           <a href="#" class="top-bar__logo-link">
             <img
-            src="src/images/logo-2x.png"
+            src="src/images/Logo.svg"
             alt="Nothing logo"
             class="top-bar__logo"
             >
@@ -77,10 +81,10 @@
                 <a class="nav__link" href="#store">Store</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#cart">Login</a>
+                <a class="nav__link" href="#contacts">Login</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#cart">Cart(0)</a>
+                <a class="nav__link" href="#contacts">Cart(0)</a>
               </li>
             </ul>
           </nav>
@@ -240,6 +244,7 @@
                 class="contacts__form"
                 action="#"
                 method="POST"
+                onsubmit="this.reset(); return false;"
               >
                 <label class="visually-hidden" for="name">Name</label>
                 <input

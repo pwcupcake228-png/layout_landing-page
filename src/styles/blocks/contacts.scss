@@ -36,6 +36,11 @@
     gap: $spacing-sm;
   }
 
+  &__textarea {
+    resize: vertical;
+    min-height: 148px;
+  }
+
   &__input,
   &__textarea {
     box-sizing: border-box;
@@ -45,7 +50,6 @@
     font-size: 14px;
     line-height: 140%;
     background-color: transparent;
-
     border: 1px solid transparent;
     border-radius: $radius-sm;
     color: $main-text-color;
@@ -60,11 +64,15 @@
       border-color: $main-text-color;
       color: $main-text-color;
     }
-  }
 
-  &__textarea {
-    resize: vertical;
-    min-height: 148px;
+    &:invalid:not(:placeholder-shown),
+    &:user-invalid {
+      border-color: #d64545;
+    }
+
+    &:valid:not(:placeholder-shown) {
+      border-color: #4d8b6a;
+    }
   }
 
   &__button {

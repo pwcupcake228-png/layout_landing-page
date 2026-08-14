@@ -48,10 +48,10 @@
     line-height: 140%;
     color: $main-text-color;
     text-decoration: none;
-    transition: opacity 0.3s;
+    transition: color $effectDuration;
 
     &:hover {
-      opacity: 0.7;
+      color: $color-hover-dark;
     }
   }
 }
